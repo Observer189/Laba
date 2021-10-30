@@ -3,9 +3,13 @@
 *.pdb
 *.tlog
 *.sln
+*.vcxproj
+*.vcxproj.*
 # удалим все файлы и папки с именем bin
 bin
 # удалим конкретный файл с секретными сведениями
 \data\secret_key.txt
+/Debug/*
+.vs/
+L15/
 
-.vs
