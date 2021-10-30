@@ -36,3 +36,8 @@ int DaysInYearRange(int lowYear, int upYear)
     }
     return sum;
 }
+
+int SecondsInHours(int hours)
+{
+    return hours * 60 * 60;
+}
