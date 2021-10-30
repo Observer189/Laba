@@ -11,5 +11,5 @@ bin
 \data\secret_key.txt
 /Debug/*
 .vs/
-L15/
+L15/Debug/*
 
