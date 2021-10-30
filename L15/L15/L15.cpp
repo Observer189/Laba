@@ -27,3 +27,12 @@ int DaysInYear(int year)
     }
 }
 
+int DaysInYearRange(int lowYear, int upYear)
+{
+    int sum = 0;
+    for (int i = lowYear; i <= upYear; i++)
+    {
+        sum += DaysInYear(i);
+    }
+    return sum;
+}
