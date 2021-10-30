@@ -1,43 +1,19 @@
 ﻿
 #include <iostream>
+#include "lib.h"
 #include <cassert>
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    assert(isLeapYear(800));
+    assert(!isLeapYear(200));
+    assert(isLeapYear(2016));
+    assert(isLeapYear(!2011));
+
+    assert(LaterInDay(311, 216) == 311);
+
+    assert(DaysInYear(2016) == 366);
+    assert(DaysInYear(2017) == 365);
 }
 
-bool isLeapYear(int year)
-{
-    return (year % 4 == 0) && !(year % 100 == 0) || (year % 400 == 0);
-}
 
-int LaterInDay(int first, int second)
-{
-    assert(first < 366 && first >0 && second < 366 && second>0);
-    return std::max(first, second);
-}
-
-int DaysInYear(int year)
-{
-    if (isLeapYear(year)) return 366;
-    else
-    {
-        return 365;
-    }
-}
-
-int DaysInYearRange(int lowYear, int upYear)
-{
-    int sum = 0;
-    for (int i = lowYear; i <= upYear; i++)
-    {
-        sum += DaysInYear(i);
-    }
-    return sum;
-}
-
-int SecondsInHours(int hours)
-{
-    return hours * 60 * 60;
-}
