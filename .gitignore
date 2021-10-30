@@ -4,7 +4,7 @@
 *.tlog
 *.sln
 *.vcxproj
-*.vcxproj.*
+*.vcxproj*
 # удалим все файлы и папки с именем bin
 bin
 # удалим конкретный файл с секретными сведениями
@@ -12,4 +12,5 @@ bin
 /Debug/*
 .vs/
 L15/Debug/*
+L15/L15/Debug/*
 
